@@ -1,0 +1,15 @@
+[ ] attendance
+[x] city
+[x] country
+[x] course
+[x] courseAssignment
+[x] coursePreReq
+[x] department
+[ ] exam
+[ ] examMarks
+[x] room
+[ ] sesActiv
+[ ] sesActivMarks
+[x] student
+[ ] studentCourse
+[x] teacher

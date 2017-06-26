@@ -1,0 +1,25 @@
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.dataTableLabel {
+  margin-bottom: 5px;
+}
+
+.dataTableLabel label {
+  font-weight: normal;
+}
+
+.dataTableLabel label input {
+  margin-left: 10px;
+}
+
+.scroll {
+  overflow-y: scroll;
+}
+
+.fixed-panel {
+  height: 412px;
+}
