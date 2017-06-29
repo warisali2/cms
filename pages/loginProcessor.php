@@ -50,7 +50,8 @@ session_start();
     $_SESSION['id'] = $user;
     $_SESSION['auth'] = true;
     $_SESSION['name'] = $row['firstName'];
-
+    $_SESSION['table'] = $table;
+    
     if($table == 'student')
       header('Location: student.php');
     else if($table == 'teacher')
