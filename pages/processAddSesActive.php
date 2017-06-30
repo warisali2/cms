@@ -8,7 +8,6 @@
   $type = $_POST['type'];
   $date = $_POST['date'];
   $marks = $_POST['marks'];
-  $weight = ($_POST['weightage'])/100;
   $courseID = $_POST['courseID'];
 
   $dbc = new mysqli($hn, $un, $pw, $db);
@@ -21,8 +20,8 @@
   $sesID = ($idResult->fetch_array(MYSQLI_ASSOC)  ['max(sesID)'])+1;
 
 
-  $query = sprintf('INSERT INTO sesActiv (sesID, courseID, sesName, type, sesDate, totalMarks, weightage) VALUES (%d, %d, "%s", "%s", STR_TO_DATE("%s","%%Y-%%m-%%d"), %d, %f)',
-          $sesID, $courseID, $name, $type, $date, $marks, $weight);
+  $query = sprintf('INSERT INTO sesActiv (sesID, courseID, sesName, type, sesDate, totalMarks) VALUES (%d, %d, "%s", "%s", STR_TO_DATE("%s","%%Y-%%m-%%d"), %d)',
+          $sesID, $courseID, $name, $type, $date, $marks);
 
   $result = $dbc->query($query);
   if(!$result) die($dbc->error);

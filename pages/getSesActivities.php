@@ -6,7 +6,7 @@
   $dbc = new mysqli($hn, $un, $pw, $db);
   if($dbc->connect_error) die($dbc->connect_error);
 
-  $query = sprintf("SELECT sesID, sesName, totalMarks, type, weightage
+  $query = sprintf("SELECT sesID, sesName, totalMarks, type
                     FROM sesActiv WHERE courseID = %d", $courseID);
 
   $result = $dbc->query($query);
@@ -21,13 +21,11 @@
       <td>%s</td>
       <td>%s</td>
       <td>%d</td>
-      <td>%0.2f</td>
     </tr>
     ',$row['sesID'],
       $row['sesName'],
       $typeNames[$row['type']],
-      $row['totalMarks'],
-      $row['weightage']
+      $row['totalMarks']
      );
   }
 

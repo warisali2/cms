@@ -66,7 +66,7 @@
                                   <button name="courseID" value="%d" class="btn btn-link" type="submit" formaction="viewAttendance.php">View Attendance</button><br>
                                 </div>
                                 <div class="col-lg-6">
-                                  <button name="courseID" value="%d" class="btn btn-link" type="submit" formaction="markSesActive.php">View Gradebook</button><br>
+                                  <button name="courseID" value="%d" class="btn btn-link" type="submit" formaction="viewGradebook.php">View Gradebook</button><br>
                                 </div>
                               </form>
                             </div>
@@ -93,7 +93,7 @@
                                   <button name="courseID" value="%s" class="btn btn-link" type="submit" formaction="viewAttendance.php">View Attendance</button><br>
                                 </div>
                                 <div class="col-lg-6">
-                                  <button name="courseID" value="%s" class="btn btn-link" type="submit" formaction="markSesActive.php">View Gradebook</button><br>
+                                  <button name="courseID" value="%s" class="btn btn-link" type="submit" formaction="viewGradebook.php">View Gradebook</button><br>
                                 </div>
                               </form>
                             </div>

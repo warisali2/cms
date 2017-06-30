@@ -50,7 +50,6 @@
                     <th>Name</th>
                     <th>Type</th>
                     <th>Marks</th>
-                    <th>Weightage</th>
                   </tr>
                 </thead>
                 <tbody>

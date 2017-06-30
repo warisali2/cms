@@ -74,13 +74,6 @@
                     <input type="number" class="form-control" id="marks" required name="marks" min="1">
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-4" for="weightage">Weightage:</label>
-                  <div class="col-sm-1">
-                    <input type="number" class="form-control" id="weightage" required name="weightage" max="100" min="1">
-                  </div>
-                  <p class="form-control-static">%</p>
-                </div>
                 <input type="hidden" value="<?php echo $_POST['courseID'];?>" name="courseID">
                 <div class="form-group">
                   <div class="col-sm-offset-4 col-sm-8">
